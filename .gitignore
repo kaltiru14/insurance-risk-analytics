@@ -1,5 +1,5 @@
 # Ignore data files
-data/*
+# data/*
 !data/.gitkeep
 
 # Ignore DVC cache & temp files
