@@ -82,3 +82,35 @@ pip install pandas matplotlib seaborn numpy
 jupyter notebook notebooks/eda.ipynb
 ```
 The notebook contains step-by-step analysis, visualizations, and insights.
+
+## Task 2 — Data Version Control (DVC)
+### Objective
+
+Establish a reproducible and auditable data pipeline using DVC, ensuring that datasets and analyses can be tracked and reproduced for compliance and debugging.
+
+**Steps Completed**
+
+**1. DVC Initialization**
+```bash
+pip install dvc
+dvc init
+```
+**2. Local Remote Storage**
+```bash 
+mkdir D:\tenx\dvc-storage
+dvc remote add -d localstorage D:\tenx\dvc-storage 
+```
+**3. Dataset Tracking**
+```bash
+dvc add data/MachineLearningRating_v3.txt
+git add data/.gitignore data/MachineLearningRating_v3.txt.dvc
+git commit -m "Track dataset with DVC for Task 2"
+```
+**3. Push Data to Remote**
+```bash
+dvc push
+```
+### Outcome
+- Dataset is versioned and reproducible
+- DVC pipeline ensures auditability and compliance
+- Task 2 branch is ready to merge into main
