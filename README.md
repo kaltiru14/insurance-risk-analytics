@@ -151,5 +151,5 @@ The goal of Task 3 was to statistically validate or reject key hypotheses about 
   - Policies with higher margins indicate profitable segments for targeted marketing.
   ## Usage
 1. Load the dataset (MachineLearningRating_v3.txt) with | as the separator.
-2. Run task3_analysis.ipynb to reproduce the hypothesis tests and tables.
+2. Run task_3_hypothesis_testing.ipynb to reproduce the hypothesis tests and tables.
 3. The outputs include Chi-Square and ANOVA results with p-values and business interpretation.
