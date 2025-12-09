@@ -153,3 +153,30 @@ The goal of Task 3 was to statistically validate or reject key hypotheses about 
 1. Load the dataset (MachineLearningRating_v3.txt) with | as the separator.
 2. Run task_3_hypothesis_testing.ipynb to reproduce the hypothesis tests and tables.
 3. The outputs include Chi-Square and ANOVA results with p-values and business interpretation.
+
+## Task 4 – Predictive Modeling: Claim Severity & Risk-Based Pricing
+
+### Objectives
+- Predict `TotalClaims` for policies with claims (financial liability estimation).  
+- Enable risk-based premium pricing by combining predicted claim probability and severity.
+
+### Data Preparation
+- Dropped unnecessary/highly correlated columns.  
+- Numeric features: converted to numeric type, missing values imputed with median.  
+- Categorical features: converted to string, missing values filled with 'Unknown', one-hot encoded.  
+- Train-test split: 80% train, 20% test.
+
+### Models
+- **Linear Regression**  
+- **Random Forest Regressor**  
+- **XGBoost Regressor**  
+- Preprocessing and modeling implemented via **pipelines**.
+
+### Evaluation
+- Metrics: RMSE, R²  
+- Compare model performance and select best model.
+
+### Interpretability
+- **SHAP** used for XGBoost to identify top features affecting claim predictions.  
+- Provides actionable insights for business decisions, e.g., how vehicle age affects predicted claim amounts.
+
