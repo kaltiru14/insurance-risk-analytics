@@ -142,6 +142,7 @@ The goal of Task 3 was to statistically validate or reject key hypotheses about 
 | VehicleAge          | ANOVA      | 10.58     | 2.64e-05  | Yes         |
 | CustomValueEstimate | ANOVA      | 7.97      | 0.00038   | Yes         |
 | Margin              | ANOVA      | 668.55    | 1.86e-290 | Yes         |
+
 **Interpretation:**
 - All tested features are statistically significant, meaning they have a measurable effect on claim frequency, severity, or margin.
 - **Business Implication:**
