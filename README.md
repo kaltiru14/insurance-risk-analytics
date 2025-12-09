@@ -100,7 +100,7 @@ dvc init
 mkdir D:\tenx\dvc-storage
 dvc remote add -d localstorage D:\tenx\dvc-storage 
 ```
-**3. Dataset Tracking88
+**3. Dataset Tracking**
 ```bash
 dvc add data/MachineLearningRating_v3.txt
 git add data/.gitignore data/MachineLearningRating_v3.txt.dvc
